@@ -1,0 +1,64 @@
+name: pulseguard
+description: "Cross-platform emergency alert system with real-time GPS location sharing."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.7.0 <4.0.0'
+
+dependencies:
+  firebase_auth: ^4.12.1
+  google_sign_in: ^6.1.5
+  firebase_core: ^2.20.0
+  file_picker: ^10.1.9
+  cloud_firestore: ^4.17.5
+  flutter:
+    sdk: flutter
+
+  # UI & Animations (for splash screen)
+  flutter_animate: ^4.2.0  # For advanced animations
+  flutter_map: ^6.1.0
+
+  flutter_svg: ^2.0.7      # If using SVG for logo
+  geolocator: ^11.0.0
+
+  http: ^1.2.0
+  iconsax: ^0.0.8
+  latlong2: ^0.9.0
+  location: ^8.0.0
+  lottie: ^2.7.0           # For optional Lottie animations
+
+  # Core utilities
+  path_provider: ^2.1.5
+  pdf: ^3.11.3
+  permission_handler: ^12.0.0+1
+  printing: ^5.14.2
+  provider: ^6.1.1         # For simple state management
+  url_launcher: ^6.2.6
+  flutter_dotenv: ^5.2.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  flutter_native_splash: ^2.4.0
+  flutter_launcher_icons: ^0.13.1
+
+
+flutter_native_splash:
+  color: "#ffffff"  # background color
+  image: assets/splash.jpg  # path to your splash image
+  android: true
+  ios: true
+  web: false
+
+
+flutter:
+  uses-material-design: true
+
+  assets:
+      - assets/splash.jpg
+    # - assets/images/       # For splash screen background/logo
+    # - assets/animations/   # For optional Lottie animations
+    # - assets/icons/        # For logo/icon files
+
